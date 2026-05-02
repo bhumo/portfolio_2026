@@ -1,0 +1,60 @@
+Bhumika Gupta
+Atlanta, GA|706-765-9153|bhumi.gupta89us@gmail.com |linkedin.com/in/bhumo|github.com/bhumo|bhumo.lovable.app
+SUMMARY
+Backend Software & AI Engineer  specialized in high-scale distributed systems and LLM reliability. Engineered Kafka/Spring Boot microservices 
+processing 50K+ daily transactions  and deployed RAG pipelines using Guardrails AI and Ragas  to cut fraud false-positives and manual review in 
+half. Expert in building production-ready, autonomous AI solutions with 99.95% reliability.
+TECHNICAL SKILLS
+• Languages: Java, Python, JavaScript, TypeScript, SQL, C++
+• Backend & APIs: Spring Boot, FastAPI, Flask, gRPC, GraphQL (Apollo), REST, WebSockets, Node.js
+• AI & Machine Learning : Large Language Models (LLM) , GenAI, LangGraph, LangChain, DSPy, Guardrails AI, RAGAS, MLflow, OpenAI 
+GPT-4, Hugging Face Transformers , LoRA, PEFT, RAG, pgvector, Pinecone
+• Cloud & DevOps: AWS (ECS Fargate, Lambda, S3, DynamoDB, CloudWatch, RDS) , Docker, Kubernetes, Jenkins, Prometheus, Grafana, 
+Terraform, GitHub Actions
+• Data & Streaming: PostgreSQL, MySQL, MongoDB, Redis, Apache Kafka, Apache Spark
+• Architecture & Concepts : Distributed Systems, Microservices, Event-Driven Architecture , Payment Processing, Fraud Detection, Multi-Agent 
+Systems, OAuth2, OIDC, JWT, System Design, Observability, CI/CD
+WORK EXPERIENCE
+Softtechers LLC|Software Engineer - Backend & AI Jan 2026 - Present
+• Built a fraud-detection microservice ( Spring Boot, Kafka) that processes 50K+ daily transactions, using LLMs with Guardrails AI for output 
+validation and Ragas for accuracy checks, lowering false positives and manual reviews by 40%.
+• Pioneered a LLM -powered dispute-resolution agent utilizing LangGraph, DSPy, and FastAPI to autonomously triage cardholder disputes, drove 
+down average handling time by 45% across 10K+ monthly cases.
+• Constructed payment  REST APIs in Java Spring Boot supporting 100K requests/minute peak loads , integrated idempotency keys, circuit 
+breakers, and retry logic to guarantee a 99.95% transaction success rate.
+• Launched a React.js real-time risk operations dashboard aggregating live transaction streams and ML confidence scores, cutting average triage 
+time from 12 minutes to 8 minutes per alert.
+Changing The Present |Software Engineer Sep 2025 - Jan 2026
+• Improved Natural Language Processing  (NLP) model inference via request batching and layer deduplication, boosted summarization throughput 
+by 25% and lowered p95 API latency from 850ms to 630ms.
+• Shrank production Mean Time To Recovery (MTTR) from 45 minutes to under 15 minutes as the primary on-call engineer by authoring structured 
+AWS CloudWatch log-correlation runbooks.
+• Orchestrated a Docker based CI/CD pipeline that compressed release cycles by 40% and eliminated environment drift failures.
+• Partnered with Risk Ops  to launch a React.js dashboard aggregating live transaction streams and ML scores, cutting average triage time from 12 
+to 8 minutes per alert
+WebCraft-IT|Software Engineer Apr 2022 - Jul 2023
+• Scaled and hardened an Apache Kafka and Spark Streaming analytics pipeline on AWS that ingested 100K daily events across 150+ event types, 
+minimizing data-sync latency by 30% for a 10K-user SaaS platform
+• Optimized PostgreSQL query execution plans and layered Redis caching for hot read path, cut p95 page-load time by 25% and decreased database 
+CPU load by 40% under peak traffic.
+• Accelerated release cycles from bi-weekly to weekly by implementing a Jenkins CI/CD pipeline with automated unit and integration test gates.
+Freshworks Inc.|Software Engineer Mar 2021 - Mar 2022
+• Refactored a monolithic authentication module into event-driven Spring Boot microservices utilizing Kafka asynchronous processing, sustained 
+1M+ requests/day while dropping p95 latency by 35%.
+• Implemented a Spring Security JWT and RBAC enforcement filter at the API gateway, mitigating unauthorized access by 25%
+• Centralized authentication by OAuth2 and OIDC SSO federation across the product suite, unblocking deals and increasing enterprise-tier retention 
+by 15%.
+PROJECTS
+StudyBuddy AI Agent |github.com/bhumo/ai tutor agent
+• Created a multi-agent RAG tutoring system using a LangGraph orchestrator, pgvector semantic store, FastAPI inference backend, and GPT-4.
+• Achieved 10x faster query recall versus baseline keyword search, handled concurrent sessions at sub-200ms retrieval latency on AWS with 
+auto-scaling.
+Decentralized P2P Encrypted File System |github.com/bhumo/decenter p2p
+• Designed a hybrid AES-256-CBC and RSA dual-key scheme with per-session key isolation, eliminating the need for re-encryption upon key 
+revocation.
+• Developed a push-based Certificate Authority with real-time socket revocation and async I/O over a DHT-backed replica sync layer, achieving 3x 
+baseline throughput with zero plaintext exposure.
+EDUCATION
+University of Georgia Aug 2023 - May 2025
+Master of Science, Computer Science (GPA: 3.96/4.0) Athens, GA
+• Coursework: Machine Learning, Advanced Representation Learning, Trustworthy ML/AI, Data Science II

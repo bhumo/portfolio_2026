@@ -1,0 +1,46 @@
+/* GLOBAL RESPONSIVE UI BINDINGS & COMPONENT OVERRIDES */
+
+/* VERCEL/APPLE-TIER PREMIUM UTILITIES */
+
+/* Hardware-Accelerated Marquee Physics */
+.marquee-container {
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Vercel Glassmorphism Node Shaders */
+.vercel-glass {
+  background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.005) 100%);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 32px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.02);
+}
+
+.vercel-glass:hover {
+  border: 1px solid rgba(255,77,0,0.4);
+  box-shadow: 0 20px 60px rgba(255,77,0,0.15), inset 0 0 0 1px rgba(255,77,0,0.1);
+}
+
+/* Base structural overrides resolving legacy flex collapses */
+@media (max-width: 1024px) {
+  .vercel-glass { padding: 32px !important; border-radius: 20px !important; }
+}
