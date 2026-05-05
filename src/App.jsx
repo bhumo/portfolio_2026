@@ -16,9 +16,9 @@ function App() {
          <Hero />
          <About />
          <Skills />
-         <Education />
          <Experience />
          <Projects />
+         <Education />
          <Footer />
       </div>
     </SmoothScroll>

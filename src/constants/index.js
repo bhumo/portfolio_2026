@@ -27,9 +27,9 @@ import {
 
 export const siteConfig = {
   brand: "Portfolio",
-  name: "Adrian",
+  name: "Bhumika",
   headline: `I build products and help teams ship polished web experiences through strong engineering, thoughtful UX, and reliable delivery.`,
-  email: "hello@adrian.dev",
+  email: "bhumi.gupta89us@gmail.com",
   mission:
     "My focus is partnering with people who care about craft—shipping software that feels as good as it looks.",
 };
@@ -149,7 +149,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Adrian has an exceptional ability to turn ambiguity into a clear plan. Working together was both productive and energizing.",
+      "Bhumika has an exceptional ability to turn ambiguity into a clear plan. Working together was both productive and energizing.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",

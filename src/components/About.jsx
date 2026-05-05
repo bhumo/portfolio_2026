@@ -23,9 +23,10 @@ const About = () => {
                 {/* Massive Metric Bounding Grid */}
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', marginTop: '120px', width: '100%', justifyContent: 'center' }}>
                     {[
-                        { num: '50K+', label: 'Daily Transactions' },
-                        { num: '300ms', label: 'Inference Latency Target' },
-                        { num: '0.0%', label: 'Tolerance Level' }
+                        { num: '3+',    label: 'Years Experience'       },
+                        { num: '50K+',  label: 'Daily Transactions'     },
+                        { num: '300ms', label: 'Inference Latency'      },
+                        { num: '99.95%',label: 'Transaction Success'    },
                     ].map((metric, i) => (
                         <motion.div key={i} 
                            initial={{ opacity: 0, scale: 0.8 }} 
