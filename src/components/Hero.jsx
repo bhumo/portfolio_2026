@@ -33,17 +33,6 @@ const Hero = () => {
 
       <motion.div style={{ position: 'relative', zIndex: 10, y: yText, opacity: opacityText, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-        {/* Hook badge */}
-        <motion.div
-          initial={{ opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8, ease: EASE }}
-          style={{ marginBottom: '32px', padding: '8px 20px', border: '1px solid rgba(255,77,0,0.3)', borderRadius: '100px', backgroundColor: 'rgba(255,77,0,0.06)', backdropFilter: 'blur(10px)' }}
-        >
-          <p style={{ fontSize: '0.78rem', letterSpacing: '3px', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 700 }}>
-            Backend &amp; AI Engineer
-          </p>
-        </motion.div>
-
         {/* Name */}
         <div style={{ position: 'relative' }}>
           <h1 className="text-massive" style={{ color: 'var(--text-primary)', position: 'relative', zIndex: 2 }}>BHUMIKA</h1>
@@ -59,7 +48,7 @@ const Hero = () => {
           transition={{ delay: 0.6, duration: 0.9, ease: EASE }}
           style={{ marginTop: '36px', fontSize: 'clamp(0.95rem, 2vw, 1.15rem)', color: 'var(--text-secondary)', letterSpacing: '0.3px', lineHeight: 1.6, maxWidth: '520px' }}
         >
-          I engineer deeply resilient <span style={{ color: '#fff', fontWeight: 600 }}>backend architectures</span> and <span style={{ color: '#fff', fontWeight: 600 }}>AI-native microservices</span> — bridging high-frequency data pipelines with autonomous execution.
+          <span style={{ color: 'var(--accent)', fontWeight: 700 }}>Backend &amp; AI Engineer</span> — microservices that handle the load, LLM agents that handle the logic.
         </motion.p>
 
         {/* Stats row */}
@@ -81,19 +70,6 @@ const Hero = () => {
           ))}
         </motion.div>
 
-        {/* Scroll hint */}
-        <motion.div
-          initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-          transition={{ delay: 1.4, duration: 1 }}
-          style={{ marginTop: '64px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}
-        >
-          <span style={{ fontSize: '0.65rem', letterSpacing: '3px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.25)', fontWeight: 600 }}>Scroll</span>
-          <motion.div
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
-            style={{ width: '1px', height: '40px', background: 'linear-gradient(to bottom, rgba(255,255,255,0.3), transparent)' }}
-          />
-        </motion.div>
 
       </motion.div>
 

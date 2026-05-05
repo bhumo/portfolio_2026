@@ -2,7 +2,7 @@
 
 Personal portfolio for **Bhumika Gupta**, Backend Software & AI Engineer. Built with React, Three.js, and Framer Motion with a dark glassmorphic design.
 
-
+**Live:** [portfolio-2026-eight-ivory.vercel.app](https://portfolio-2026-eight-ivory.vercel.app)
 
 ---
 
