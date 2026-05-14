@@ -7,12 +7,6 @@ const LinkedinIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill=
 const EmailIcon    = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>;
 const DownloadIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>;
 
-const STATS = [
-  { value: '3+',     label: 'Yrs Experience' },
-  { value: '50K+',   label: 'Txns / Day'     },
-  { value: '99.95%', label: 'Uptime SLA'     },
-];
-
 const EASE = [0.16, 1, 0.3, 1];
 
 const Hero = () => {
@@ -50,25 +44,6 @@ const Hero = () => {
         >
           <span style={{ color: 'var(--accent)', fontWeight: 700 }}>Backend &amp; AI Engineer</span> — microservices that handle the load, LLM agents that handle the logic.
         </motion.p>
-
-        {/* Stats row */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.85, duration: 0.9, ease: EASE }}
-          style={{ marginTop: '48px', display: 'flex', gap: 'clamp(24px, 5vw, 60px)', alignItems: 'center' }}
-        >
-          {STATS.map((s, i) => (
-            <React.Fragment key={i}>
-              <div style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 900, color: '#fff', letterSpacing: '-0.04em', lineHeight: 1 }}>{s.value}</div>
-                <div style={{ fontSize: '0.72rem', letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--text-secondary)', marginTop: '6px', fontWeight: 600 }}>{s.label}</div>
-              </div>
-              {i < STATS.length - 1 && (
-                <div style={{ width: '1px', height: '32px', backgroundColor: 'var(--border)' }} />
-              )}
-            </React.Fragment>
-          ))}
-        </motion.div>
 
 
       </motion.div>

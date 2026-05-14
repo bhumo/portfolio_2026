@@ -3,10 +3,10 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Experience = () => {
    const ref = useRef(null);
-   const { scrollYProgress } = useScroll({ target: ref, offset: ["start center", "end center"] });
+   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
    
    return (
-       <section id="experience" ref={ref} style={{ position: 'relative', padding: '160px 0', borderTop: '1px solid var(--border)', overflow: 'hidden' }}>
+       <section id="experience" ref={ref} style={{ position: 'relative', padding: '160px 0', borderTop: '1px solid var(--border)', overflow: 'clip' }}>
           
           <div className="page-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '80px' }}>
              

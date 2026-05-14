@@ -82,38 +82,32 @@ const SkillPill = ({ skill, index }) => {
       onMouseLeave={() => setHovered(false)}
       whileHover={{ y: -2, transition: SPRING }}
       style={{
-        padding: skill.featured ? '12px 24px' : '10px 20px',
+        padding: '10px 22px',
         borderRadius: '100px',
         border: hovered
-          ? '1px solid rgba(255,77,0,0.5)'
+          ? '1px solid rgba(255,77,0,0.7)'
           : skill.featured
-            ? '1px solid rgba(255,255,255,0.18)'
-            : '1px solid rgba(255,255,255,0.07)',
+            ? '1px solid rgba(255,77,0,0.55)'
+            : '1px solid rgba(255,255,255,0.12)',
         backgroundColor: hovered
-          ? 'rgba(255,77,0,0.1)'
+          ? 'rgba(255,77,0,0.18)'
           : skill.featured
-            ? 'rgba(255,255,255,0.06)'
-            : 'rgba(255,255,255,0.02)',
-        color: hovered ? '#fff' : skill.featured ? '#fff' : 'var(--text-secondary)',
-        fontWeight: skill.featured ? 700 : 500,
-        fontSize: skill.featured ? '0.95rem' : '0.88rem',
+            ? 'rgba(255,77,0,0.14)'
+            : 'transparent',
+        color: hovered ? '#fff' : skill.featured ? '#fff' : 'rgba(255,255,255,0.45)',
+        fontWeight: skill.featured ? 700 : 400,
+        fontSize: '0.9rem',
         letterSpacing: '0.3px',
         cursor: 'default',
         transition: 'border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease',
-        boxShadow: hovered ? '0 4px 24px rgba(255,77,0,0.12)' : 'none',
+        boxShadow: hovered
+          ? '0 4px 24px rgba(255,77,0,0.15)'
+          : skill.featured
+            ? '0 0 16px rgba(255,77,0,0.08)'
+            : 'none',
         whiteSpace: 'nowrap',
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
       }}
     >
-      {skill.featured && (
-        <motion.span
-          animate={{ opacity: [0.6, 1, 0.6] }}
-          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--accent)', flexShrink: 0, boxShadow: '0 0 6px rgba(255,77,0,0.9)' }}
-        />
-      )}
       {skill.name}
     </motion.div>
   );
@@ -199,16 +193,18 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
           viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }}
-          style={{ marginTop: '48px', display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}
+          style={{ marginTop: '48px', display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: 'var(--accent)', boxShadow: '0 0 6px rgba(255,77,0,0.8)', display: 'inline-block' }} />
-            <span style={{ color: 'var(--text-secondary)', fontSize: '0.78rem', letterSpacing: '2px', textTransform: 'uppercase' }}>Core strength</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.3)', display: 'inline-block' }} />
-            <span style={{ color: 'var(--text-secondary)', fontSize: '0.78rem', letterSpacing: '2px', textTransform: 'uppercase' }}>Proficient</span>
-          </div>
+          <span style={{
+            padding: '6px 16px', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 700,
+            letterSpacing: '1.5px', textTransform: 'uppercase',
+            border: '1px solid rgba(255,77,0,0.55)', backgroundColor: 'rgba(255,77,0,0.14)', color: '#fff',
+          }}>Core strength</span>
+          <span style={{
+            padding: '6px 16px', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 400,
+            letterSpacing: '1.5px', textTransform: 'uppercase',
+            border: '1px solid rgba(255,255,255,0.12)', backgroundColor: 'transparent', color: 'rgba(255,255,255,0.45)',
+          }}>Proficient</span>
         </motion.div>
 
       </div>
