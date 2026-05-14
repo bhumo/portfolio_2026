@@ -30,8 +30,7 @@ by 25% and lowered p95 API latency from 850ms to 630ms.
 • Shrank production Mean Time To Recovery (MTTR) from 45 minutes to under 15 minutes as the primary on-call engineer by authoring structured 
 AWS CloudWatch log-correlation runbooks.
 • Orchestrated a Docker based CI/CD pipeline that compressed release cycles by 40% and eliminated environment drift failures.
-• Partnered with Risk Ops  to launch a React.js dashboard aggregating live transaction streams and ML scores, cutting average triage time from 12 
-to 8 minutes per alert
+• Shipped a real-time React.js observability dashboard aggregating microservice health metrics and distributed logs, reducing engineer triage time 25%.
 WebCraft-IT|Software Engineer Apr 2022 - Jul 2023
 • Scaled and hardened an Apache Kafka and Spark Streaming analytics pipeline on AWS that ingested 100K daily events across 150+ event types, 
 minimizing data-sync latency by 30% for a 10K-user SaaS platform
